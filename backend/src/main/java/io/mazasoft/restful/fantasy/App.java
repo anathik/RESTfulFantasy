@@ -10,7 +10,7 @@ import java.util.Date;
 
 public class App extends NanoHTTPD {
   public static void main(String[] args) {
-    App app = new App(3000, resolvePath("../frontend"));
+    App app = new App(3000, resolvePath("../frontend/web"));
 
     try {
       app.start();
