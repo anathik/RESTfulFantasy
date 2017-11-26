@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>REST</title>
+
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <div class="page-wrapper" on="onPageRender()">
+    <div class="crud-action-select">
+      <div class="button" id="create-button" onclick="componentRoute('create')">
+        <div class="button-action-text">Create</div>
+      </div>
+      <div class="button" id="delete-button" onclick="componentRoute('delete')">
+        <div class="button-action-text">Delete</div>
+      </div>
+      <div class="button" id="update-button" onclick="componentRoute('update')">
+        <div class="button-action-text">Update</div>
+      </div>
+      <div class="button" id="read-button" onclick="componentRoute('read')">
+        <div class="button-action-text">Read</div>
+      </div>
+    </div>
+    <div class="create-form" id="create">
+      <form action="/action_page.php">
+        Entity Type:
+        <input type="text" name="entity-type">
+        <br> Entity Name:
+        <input type="text" name="entity-name">
+        <br>
+        <input type="submit" value="Create">
+      </form>
+    </div>
+    <div class="delete-form" id="delete"></div>
+    <div class="update-form" id="update"></div>
+    <div class="read-form" id="read"></div>
+  </div>
+</body>
+
+</html>

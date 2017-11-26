@@ -1,0 +1,54 @@
+body {
+  display: grid;
+  margin: 0;
+}
+.page-wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.crud-action-select {
+  top: 40vh;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+.button {
+  width: 150px;
+  height: 45px;
+  background: #ffffff;
+  line-height: 45px;
+  margin: 2px;
+  border-radius: 2px;
+}
+
+#create-button {
+  background: #239e13;
+}
+.create-form,
+.create-form-active {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  width: 60vw;
+  margin: 0 20vw 0 20vw;
+}
+#delete-button {
+  background: #9e1313;
+}
+#update-button {
+  background: #666666;
+}
+#read-button {
+  background: #ffffff;
+}
+
+.button-action-text {
+  text-transform: uppercase;
+  text-align: center;
+}
